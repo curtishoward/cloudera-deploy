@@ -1,0 +1,8 @@
+- name: Test DE-info task
+  hosts: localhost
+  tags: always
+  gather_facts: yes
+  tasks:
+    - name: the de-info task
+      cloudera.cloud.de_info:
+              #        -name: curtis-service-1
